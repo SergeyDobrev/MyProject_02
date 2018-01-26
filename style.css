@@ -5,87 +5,92 @@ html, body {
 body {
 	margin: 0 auto;
 	background-color: black;
+	overflow: hidden;
 }
 .bigblock {
-	height: 300px;
-	width: 300px;
-	margin: 200px auto;
-	perspective: 500px;
+	height: 200px;
+	width: 200px;
+	margin: 100px auto;
+	/* perspective: 300px; */
 	text-align: center;
 	position: relative;
 }
 
 .rotateblock {
- 	height: 300px;
-	width: 300px;
+ 	height: 200px;
+	width: 200px;
   	transform-style: preserve-3d;
-  	transform: rotateY(-35deg) 
+/*   	transform: rotateY(-35deg); */ 
 }
 
 .side {
-	height: 300px;
-	width: 300px;
+	height: 200px;
+	width: 200px;
 	margin: 0 auto;
 	position: absolute;
-	border: 1px solid green;
+	border: 1px solid rgba(0,255,0,0.2);
 	/* backface-visibility: visible; */
 }
 
 .front {
-  transform: translateZ(150px);
+  transform: translateZ(100px);
   }
 
 .back {
-  transform: rotateY(180deg) translateZ(150px);
+  transform: rotateY(180deg) translateZ(100px);
   }
 
 .left {
-  transform: rotateY(-90deg) translateZ(150px); }
+  transform: rotateY(-90deg) translateZ(100px); }
 
 .right {
-  transform: rotateY(90deg) translateZ(150px); }
+  transform: rotateY(90deg) translateZ(100px); }
 
 .top {
-  transform: rotateX(90deg) translateZ(150px); }
+  transform: rotateX(90deg) translateZ(100px); }
 
 .bottom {
-  transform: rotateX(-90deg) translateZ(150px); }
+  transform: rotateX(-90deg) translateZ(100px); }
 
- .smallrotateblock {
- 	height: 30px;
-	width: 30px;
+.smallblock {
+ 	height: 20px;
+	width: 20px;
   	transform-style: preserve-3d;
-  	transform: rotateY(-35deg) 
+	display: inline-block;
+	position: absolute;
+
 }
 
 .smallside {
-	height: 30px;
-	width: 30px;
+	height: 20px;
+	width: 20px;
 	margin: 0 auto;
 	position: absolute;
-	border: 1px solid green;
+	border: 1px solid rgba(0,255,0,0.1);
 	/* backface-visibility: visible; */
 }
 
 .smallfront {
-  transform: translateZ(15px);
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
+  transform: translateZ(10px);
+  color: rgba(0,255,0,0.25);
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+
   }
 
 .smallback {
-  transform: rotateY(180deg) translateZ(15px);
+  transform: rotateY(180deg) translateZ(10px);
   }
 
 .smallleft {
-  transform: rotateY(-90deg) translateZ(15px); }
+  transform: rotateY(-90deg) translateZ(10px); }
 
 .smallright {
-  transform: rotateY(90deg) translateZ(15px); }
+  transform: rotateY(90deg) translateZ(10px); }
 
 .smalltop {
-  transform: rotateX(90deg) translateZ(15px); }
+  transform: rotateX(90deg) translateZ(10px); }
 
 .smallbottom {
-  transform: rotateX(-90deg) translateZ(15px); }
+  transform: rotateX(-90deg) translateZ(10px); }
